@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en">
+{% load static %}
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="description" content="FlatBest - Responsive One Page Fast Loading">
@@ -14,36 +15,36 @@
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Raleway:500,600,700">
 
 <!-- ===== Favicon Icon ===== -->
-<link rel="icon" href="images/favicon.ico">
+<link rel="icon" href="{% static 'images/favicon.ico' %}">
 
 <!-- ===== Bootstrap ===== -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 
 <!-- ===== Font Icons ===== -->
-<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'css/font/font-awesome.min.css' %}">
 
 <!-- ===== Corousel and Lightbox ===== -->
-<link rel="stylesheet" href="css/owl.theme.css">
-<link rel="stylesheet" href="css/owl.carousel.css">
-<link rel="stylesheet" href="css/nivo-lightbox.css">
-<link rel="stylesheet" href="css/themes/default/default.css">
+<link rel="stylesheet" href="{% static 'css/owl.theme.css' %} ">
+<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %} ">
+<link rel="stylesheet" href="{% static 'css/nivo-lightbox.css' %} ">
+<link rel="stylesheet" href="{% static 'css/themes/default/default.css' %}">
 
 <!-- ===== Colors ===== -->
-<link rel="stylesheet" href="css/colors/color.css"> 
+<link rel="stylesheet" href="{% static 'css/colors/color.css' %}"> 
 
 
 <!-- ===== Preloader ===== -->
-<link rel="stylesheet" href="css/preloader.css">
+<link rel="stylesheet" href="{% static 'css/preloader.css' %}">
 
 <!-- ===== style.css ===== -->
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 <!-- ===== Responsive CSS ===== -->
-<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="{% static 'css/responsive.css' %} ">
 
 <!--[===== if lt IE 9]>
-			<script src="js/html5shiv.js"></script>
-			<script src="js/respond.min.js"></script>
+			<script src="{% static 'js/html5shiv.js' %}"></script>
+			<script src="{% static 'js/respond.min.js' %}"></script>
 <![endif]===== -->
      
 </head>
@@ -153,7 +154,7 @@
 		<div class="col-md-6">
 			<!-- ===== Images ===== -->
 			<div class="side-images pull-left">
-				<img src="images/pro.jpg" alt="Feature" class="img-responsive">
+				<img src="{% static 'images/pro.jpg' %}" alt="Feature" class="img-responsive">
 			</div>
 		</div>
 		<div class="col-md-6">
@@ -232,7 +233,7 @@
 			
 			<!-- ===== Images ===== -->
 			<div class="">
-				<img src="images/pro.jpg" alt="Feature" class="img-responsive">
+				<img src="{% static 'images/pro.jpg' %}" alt="Feature" class="img-responsive">
 			</div>
 		</div>
 	</div>
@@ -516,19 +517,19 @@
 		<div id="portfolio" class="owl-carousel owl-theme">
 			
 			<div class="portfolio-images">
-				<a href="images/portfolio/1.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio/1.jpg" alt="portfolio"></a>
+				<a href="{% static 'images/portfolio/1.jpg' %}" data-lightbox-gallery="portfolio-gallery"><img src="{% static 'images/portfolio/1.jpg' %}" alt="portfolio"></a>
 			</div>
 			
 			<div class="portfolio-images">
-				<a href="images/portfolio/2.png" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio/2.png" alt="portfolio"></a>
+				<a href="{% static 'images/portfolio/2.png' %}" data-lightbox-gallery="portfolio-gallery"><img src="{% static 'images/portfolio/2.png' %}" alt="portfolio"></a>
 			</div>
 			
 			<div class="portfolio-images">
-				<a href="images/portfolio/3.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio/3.jpg" alt="portfolio"></a>
+				<a href="{% static 'images/portfolio/3.jpg' %}" data-lightbox-gallery="portfolio-gallery"><img src="{% static 'images/portfolio/3.jpg' %}" alt="portfolio"></a>
 			</div>
 			
 			<div class="portfolio-images">
-				<a href="images/portfolio/4.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio/4.jpg" alt="portfolio"></a>
+				<a href="{% static 'images/portfolio/4.jpg' %}" data-lightbox-gallery="portfolio-gallery"><img src="{% static 'images/portfolio/4.jpg' %}" alt="portfolio"></a>
 			</div>
 		</div>
 		
@@ -555,7 +556,7 @@
 
                     <div class="item">
                         <div class="image">
-                          <img src="images/testimonials/doe1.jpg" alt="">
+                          <img src="{% static 'images/testimonials/doe1.jpg' %}" alt="">
                         </div>                  
                         <div class="content">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium minus, earum optio amet consequatur vero ipsum saepe quis accusantium! Illum soluta impedit odio fugiat maiores fuga nostrum, molestiae vero sit.</p>
@@ -566,7 +567,7 @@
 
                     <div class="item active left">
                         <div class="image">
-                          <img src="images/testimonials/doe2.jpg" alt="">
+                          <img src="{% static 'images/testimonials/doe2.jpg' %}" alt="">
                         </div>                  
                         <div class="content">
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum delectus sed distinctio provident laboriosam culpa, cumque quasi omnis sit illum velit doloribus voluptate quibusdam laudantium in. Rerum autem, ipsum fugit.</p>
@@ -577,7 +578,7 @@
 
                     <div class="item next left">
                         <div class="image">
-                          <img src="images/testimonials/doe3.jpg" alt="">
+                          <img src="{% static 'images/testimonials/doe3.jpg' %}" alt="">
                         </div>                  
                         <div class="content">
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quis quod eos placeat iusto, aliquid, dicta odit ipsum facere tenetur aperiam commodi sit nostrum libero reiciendis accusantium, cumque tempora deleniti.</p>
@@ -653,35 +654,37 @@
 	
 	
 	
+	<!--
 	<ul class="social-icons">
 		<li><a href=""><i class="fa fa-facebook"></i></a></li>
 		<li><a href=""><i class="fa fa-twitter"></i></a></li>
 		<li><a href=""><i class="fa fa-google"></i></a></li>
 		<li><a href=""><i class="fa fa-youtube"></i></a></li>
 	</ul>
+	-->
 	
 	<div class="copyright">
-		 ©2015 All Right Reserved. More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a> 
+		 ©2015 All Right Reserved. More Templates <a href="http://nanyi.tech/" target="_blank" title="">nanyi tech</a> - Collect from <a href="http://nanyi.tech/" title="" target="_blank">技术创新</a> 
 	</div>
 </div>
 </footer>
 
 
 <!-- ===== Script Javascript ===== -->
-<script src="js/jquery.min.js"></script>
-<script src="js/preloader.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/retina.js"></script>
-<script src="js/SmoothScroll.js"></script>
-<script src="js/jquery.scrollTo.min.js"></script>
-<script src="js/jquery.localScroll.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/nivo-lightbox.min.js"></script>
-<script src="js/simple-expand.min.js"></script>
-<script src="js/jquery.nav.js"></script>
-<script src="js/jquery.fitvids.js"></script>
-<script src="js/jquery.ajaxchimp.min.js"></script>
-<script src="js/custom.js"></script>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/preloader.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/retina.js' %}"></script>
+<script src="{% static 'js/SmoothScroll.js' %}"></script>
+<script src="{% static 'js/jquery.scrollTo.min.js' %}"></script>
+<script src="{% static 'js/jquery.localScroll.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/nivo-lightbox.min.js' %}"></script>
+<script src="{% static 'js/simple-expand.min.js' %}"></script>
+<script src="{% static 'js/jquery.nav.js' %}"></script>
+<script src="{% static 'js/jquery.fitvids.js' %}"></script>
+<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
 
 </body>
 </html>
