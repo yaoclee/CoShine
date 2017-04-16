@@ -1,0 +1,6 @@
+*.pyc
+*.pdf
+*.sqlite
+.settings/*
+.project
+.pydevproject
