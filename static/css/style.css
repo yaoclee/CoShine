@@ -154,6 +154,26 @@ h6 {
 	margin-top: 0;
 }
 
+h7 {
+	font-family: 'Raleway', sans-serif;
+	color: #F9BF3B;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+h8 {
+	font-family: 'Raleway', sans-serif;
+	color: #FF8C00;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+h9 {
+	font-family: 'Raleway', sans-serif;
+	color: #FFFAFA;
+	margin-bottom: 0;
+	margin-top: 0;
+}
 h1 {
 	font-size: 2.813rem;
 	line-height: 3.75rem;
@@ -188,6 +208,23 @@ h6 {
 	line-height: 25px;
 	font-weight: 600;
     font-size: 16px;
+}
+h7 {
+	line-height: 28px;
+	font-weight: 1000;
+    font-size: 24px;
+}
+
+h8 {
+	line-height: 30px;
+	font-weight: 500;
+    font-size: 18px;
+}
+
+h9 {
+	line-height: 20px;
+	font-weight: 100;
+    font-size: 10px;
 }
 .navbar-brand {
 	font-size: 48px;
