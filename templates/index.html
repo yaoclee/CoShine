@@ -657,30 +657,29 @@
 			</div>
 			
             <!-- ===== Form ===== -->
-            <form class="contact-form" id="contact" role="form">
-
+            <form class="contact-form" id="contact" role="form", method="post" action="/send/">
+				{% csrf_token %}
                 <!-- ===== Succes Send Email ===== -->
-                <h6 class="success">
-                <span class="olored-text icon_check"></span> 您的信息发送成功. </h6>
+                <div class="sub-sub"> {{ msg }} </div>
 
                 <!-- ===== Error Send Email ===== -->
                 <h6 class="error">
-                <span class="colored-text icon_error-circle_alt"></span> 您的消息等待发送. </h6>
+                <span class="icon_error-circle_alt"></span> 您的消息等待发送. </h6>
 
                 <div class="field-wrapper col-md-6">
-                    <input class="form-control input-box" id="contact-form-name" type="text" name="contact-form-name" placeholder="姓名">
+                    <input class="form-control input-box" id="contact-form-name" type="text" name="name" placeholder="姓名">
                 </div>
 
                 <div class="field-wrapper col-md-6">
-                    <input class="form-control input-box" id="contact-form-email" type="email" name="contact-form-email" placeholder="电子邮件">
+                    <input class="form-control input-box" id="contact-form-email" type="email" name="email" placeholder="电子邮件">
                 </div>
 
                 <div class="field-wrapper col-md-12">
-                    <input class="form-control input-box" id="contact-form-subject" type="text" name="contact-form-subject" placeholder="主题">
+                    <input class="form-control input-box" id="contact-form-subject" type="text" name="subject" placeholder="主题">
                 </div>
 
                 <div class="field-wrapper col-md-12">
-                    <textarea class="form-control textarea-box" id="contact-form-message" rows="7" name="contact-form-message" placeholder="内容"></textarea>
+                    <textarea class="form-control textarea-box" id="contact-form-message" rows="7" name="content" placeholder="内容"></textarea>
                 </div>
 
                 <button class="btn standard-button" type="submit" id="contact-form-submit" name="submit" data-style="expand-left">发送</button>
@@ -723,7 +722,7 @@
 			</h8>
 		 </div>
 		 <div>
-		 <h9>ICP备案号</h9>
+		 <h9> ©2017 联闪信息 沪ICP备17017973号-1</h9>
 	</div>
 	
 </div>

@@ -7,6 +7,7 @@ from django.conf import settings
 
 urlpatterns = patterns('',
         url(r'^$', views.index, name='index'),
+        url(r'^send/$', views.send, name='index'),
         #url(r'^get-all-items/$', views.get_all_items, name='get_all_items'),
         #url(r'^get-all-items-en/$', views.get_all_items_en, name='get_all_items_en'),
 
